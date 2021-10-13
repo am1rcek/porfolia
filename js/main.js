@@ -10,3 +10,14 @@ elMenuBtn.addEventListener("click",function(){
     elLineOne.classList.toggle("rotate-line1")
     elLineThree.classList.toggle("rotate-line3")
 })
+
+var typed = new Typed('.name', {
+  strings: [
+    "Husan",
+    "student",
+    "Web-developer",
+  ],
+    typeSpeed: 90,
+    backSpeed: 90,
+    loop: true
+});
