@@ -17,7 +17,7 @@ elMenuBtn.addEventListener("click",function(){
 elLine.forEach((item) => {
   window.addEventListener("scroll",function(){
     header = document.querySelector("header");
-    header.classList.add("header-bg",window.scrollY > 60);    
+    header.classList.toggle("header-bg",window.scrollY > 60);
     item.classList.toggle("float",window.scrollY > 300);
     console.log(this.window.scrollY)
   })
@@ -44,12 +44,18 @@ elNavItem.forEach((navLink) => {
 var typed = new Typed('.name', {
   strings: [
     "Husan",
-    "student",
+    "HarDev",
+    "Creative",
   ],
-    typeSpeed: 90,
-    backSpeed: 90,
+    typeSpeed: 80,
+    backSpeed: 80,
     loop: true
 });
+
+
+
+
+
 
 
 
