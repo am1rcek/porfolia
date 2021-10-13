@@ -17,7 +17,7 @@ elMenuBtn.addEventListener("click",function(){
 elLine.forEach((item) => {
   window.addEventListener("scroll",function(){
     header = document.querySelector("header");
-    header.classList.toggle("header-bg",window.scrollY > 60);
+    header.classList.toggle("header-bg",window.scrollY > 200);
     item.classList.toggle("float",window.scrollY > 300);
     console.log(this.window.scrollY)
   })
