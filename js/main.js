@@ -34,14 +34,6 @@ elNavItem.forEach((navLink) => {
       elNavItem[0].classList.add("nav__link--active");
       elNavItem[1].classList.remove("nav__link--active");
     };
-    if(this.window.scrollY > 1000){
-      elNavItem[2].classList.add("nav__link--active");
-      elNavItem[1].classList.remove("nav__link--active");
-    }
-    else if(this.window.scrollY < 1000){
-      elNavItem[1].classList.add("nav__link--active");
-      elNavItem[2].classList.remove("nav__link--active");
-    };
     console.log(this.window.scrollY)
   })
 })
