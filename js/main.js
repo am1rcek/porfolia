@@ -15,7 +15,6 @@ var typed = new Typed('.name', {
   strings: [
     "Husan",
     "student",
-    "Web-developer",
   ],
     typeSpeed: 90,
     backSpeed: 90,

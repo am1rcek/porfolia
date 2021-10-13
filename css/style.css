@@ -203,6 +203,12 @@ p{
     flex-direction: column;
     align-items: center;
   }
+  .about-me__title{
+    font-size: 35px !important;
+  }
+  .about-me__desc{
+    font-size: 25px !important;
+  }
   .nav{
     position: fixed;
     width: 100%;
@@ -234,14 +240,16 @@ p{
   }
 }
 
+
 @media only screen and (min-width: 1200px) {
   .container {
     width: 1340px;
   }
 }
 
+
 .about-me {
-  padding-top: 350px;
+  padding-top: 300px;
 }
 .about-me__title {
   font-size: 64px;
@@ -250,14 +258,10 @@ p{
   line-height: 1.5;
   text-align: center;
   position: relative;
+  z-index: 1;
   letter-spacing: 3px;
 }
-.cursor{
-  display: inline-block;
-  width: 10px;
-  height: 3px;
-  background: red;
-}
+
 .about-me__title span{
   color:rgb(241, 181, 14);
 }
@@ -269,4 +273,83 @@ p{
   text-align: center;
   position: relative;
   letter-spacing: 3px;
+}
+.scroll-down{
+  position:absolute;
+  left: 50%;
+  bottom: 60px;
+  transform: translate(-50%,0);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-family: var(--texts-font);
+  letter-spacing: 2px;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 10px;
+  padding: 15px 0;
+  animation-name: scrool-animation;
+  animation-duration: 1.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  transition: opacity 0.4s ease;
+}
+.scroll-down::before{
+  content: "";
+  display: block;
+  background: #fff;
+  width:1px;
+  height: 60px;
+  margin-bottom: 15px;
+}
+.arrow-box{
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+}
+.arrow{
+  display: inline-block;
+  border-left: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  width: 15px;
+  height: 15px;
+  transform: rotate(-45deg);
+  margin-bottom: -8px;
+
+}
+@keyframes scrool-animation {
+  5%{
+    opacity: 0.1;
+  }
+  10%{
+    opacity: 0.2;
+  }
+  15%{
+    opacity: 0.3;
+  }
+  20%{
+    opacity: 0.4;
+  }
+  25%{
+    opacity: 0.5;
+  }
+  30%{
+    opacity: 0.6;
+  }
+  35%{
+    opacity: 0.7;
+  }
+  40%{
+    opacity: 0.8;
+  }
+  45%{
+    opacity: 0.9;
+  }
+  50%{
+    opacity: 1;
+    transform: translate(-50%,15px);
+  }
+}
+.bx-chevrons-down{
+  font-size: 30px;
 }
