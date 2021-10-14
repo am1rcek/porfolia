@@ -30,19 +30,19 @@
                 <a  class="nav__link" href="#">start</a>
               </li>
               <li class="nav__item">
-                <a  class="nav__link" href="#">about me</a>
+                <a  class="nav__link" href="#about">about me</a>
               </li>
               <li class="nav__item">
-                <a  class="nav__link" href="#">services</a>
+                <a  class="nav__link" href="#services">services</a>
               </li>
               <li class="nav__item">
-                <a  class="nav__link" href="#">portfolio</a>
+                <a  class="nav__link" href="#portfolio">portfolio</a>
               </li>
               <li class="nav__item">
-                <a  class="nav__link" href="#">blog</a>
+                <a  class="nav__link" href="#blog">blog</a>
               </li>
               <li class="nav__item">
-                <a  class="nav__link" href="#">contact</a>
+                <a  class="nav__link" href="#contact">contact</a>
               </li>
             </ul>
           </nav>
@@ -67,7 +67,7 @@
   </section>
 
   <main>
-    <section class="about">
+    <section class="about" id="about">
       <div class="container">
         <h2 class="about__title">HELLO, I AM <span>H</span>USAN <span>D</span>ADAJONOV</h2>
         <div class="row between-xs">
@@ -111,7 +111,7 @@
         </div>
       </div>
     </section>
-    <section class="my-offer">
+    <section class="my-offer" id="services">
       <div class="container">
         <h2 class="my-offer__title">my offer</h2>
         <ul class="my-offer__list row between-xs">
@@ -146,7 +146,7 @@
         </ul>
       </div>
     </section>
-    <section class="services">
+    <section class="services" id="services">
       <div class="container">
         <ul class="services__list row between-xs">
           <li class="services__item projects col-md-3 col-sm-6 col-xs-12">
@@ -168,7 +168,7 @@
         </ul>
       </div>
     </section>
-    <section class="portfolio">
+    <section class="portfolio" id="portfolio">
       <h2 class="portfolio__title">MY PORTFOLIO</h2>
       <ul class="portfolio__menu-list row middle-xs">
         <li class="portfolio__menu-item portfolio__menu-item--active">all</li>
@@ -219,10 +219,72 @@
         </li>
       </ul>
     </section>
+    <section class="blog" id="blog">
+      <div class="container">
+        <h2 class="blog__title">LATEST BLOG POSTS</h2>
+        <ul class="row between blog__list">
+          <li class="blog__item col-md-4 col-sm-6 col-xs-12 about-blog">
+            <div class="about-blog__texts">
+              <p>“When you change your thoughts, remember to also change your world.”</p>
+              <span>Norman Vincent Peale</span>
+            </div>
+            <div class="about-blog__block">
+              <img src="img/me-img3.png" alt="me-img">
+            </div>
+          </li>
+          <li class="blog__item col-md-4 col-sm-6 col-xs-12 about-blog">
+            <div class="about-blog__texts">
+              <p>“Education is the most powerful weapon which you can use to change the world.”</p>
+              <span>Nelson Mande</span>
+            </div>
+            <div class="about-blog__block">
+              <img src="img/me-img1.png" alt="me-img">
+            </div>
+          </li>
+          <li class="blog__item col-md-4 col-sm-6 col-xs-12 about-blog">
+            <div class="about-blog__texts">
+              <p>“He who conquers himself is the mightiest warrior.”</p>
+              <span>Confucius</span>
+            </div>
+            <div class="about-blog__block">
+              <img src="img/me-img4.png" alt="me-img">
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="contact" id="contact">
+      <div class="container">
+        <div class="row between-xs">
+          <div class="col-md-6 col-sm-12 col-xs-12 ">
+            <form class="contact__form form" action="https://echo.htmlacademy.ru/" method="post">
+              <div class="form__inputs">
+                <input class="form__input" type="text" name="User-name" required id="user-name" placeholder="name*">
+                <label class="form__label" for="user-name"></label>
+              </div>
+              <div class="form__inputs">
+                <input class="form__input" type="email" name="User-email" required id="user-email" placeholder="e-mail*">
+                <label class="form__label" for="user-email"></label>
+              </div>
+              <div class="form__inputs">
+                <textarea class="form__input form__textarea" name="user-message" id="user-message" placeholder="Type your message here*"></textarea>
+                <label class="form__label" for="user-message"></label>
+              </div>
+              <button class="contact__btn">send message</button>
+            </form>
+          </div>
+          <div class="col-md-6  col-sm-12 col-xs-12 contact__text">
+            <h2 class="contact__text-title">FEEL FREE TO CONTACT WITH ME!</h2>
+            <p class="contact__text-desc">Anyone with any questions or suggestions can feel free to contact me.</p>
+            <a class="contact__text-link tell" href="tel:997262347">+998997262347</a>
+            <a class="contact__text-link email" href="mailto: xusandadjonov4385@gmail.com">xusandadjonov4385@gmail.com</a>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
 
-  <script src="js/typed.js"></script>
-  <script src="js/jquery.js"></script>
+  <script src="js/typed.js"></script> 
   <script src="js/particles.js"></script>
   <script src="js/app.js"></script>
   <script src="js/main.js"></script>

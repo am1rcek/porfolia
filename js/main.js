@@ -26,11 +26,11 @@ elLine.forEach((item) => {
 elNavItem.forEach((navLink) => {
   window.addEventListener("scroll",function(){
     console.log(navLink)
-    if(this.window.scrollY > 300){
+    if(this.window.scrollY > 500){
       elNavItem[1].classList.add("nav__link--active");
       elNavItem[0].classList.remove("nav__link--active");
     }
-    else if(this.window.scrollY < 300){
+    else if(this.window.scrollY < 500){
       elNavItem[0].classList.add("nav__link--active");
       elNavItem[1].classList.remove("nav__link--active");
     };
