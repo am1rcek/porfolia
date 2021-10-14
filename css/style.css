@@ -985,10 +985,8 @@ p{
 
 .form__input::placeholder {
   text-transform: uppercase;
-  font-size: 13px;
-  font-weight: 400;
+  font-size: 10px;
   color: gray;
-  transition: all 0.4s ease;
 }
 .form__textarea{
   min-height: 150px;
