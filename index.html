@@ -255,25 +255,30 @@
     </section>
     <section class="contact" id="contact">
       <div class="container">
-        <div class="row between-xs">
+        <h2 class="contact__title">CONTACT ME</h2>
+        <div class="contact__row row">
           <div class="col-md-6 col-sm-12 col-xs-12 ">
             <form class="contact__form form" action="https://echo.htmlacademy.ru/" method="post">
               <div class="form__inputs">
-                <input class="form__input" type="text" name="User-name" required id="user-name" placeholder="name*">
-                <label class="form__label" for="user-name"></label>
+                <input class="form__input" type="text" name="User-name" required id="user-name" autocomplete="off">
+                <label class="form__label" for="user-name">name*</label>
               </div>
               <div class="form__inputs">
-                <input class="form__input" type="email" name="User-email" required id="user-email" placeholder="e-mail*">
-                <label class="form__label" for="user-email"></label>
+                <input class="form__input" type="email" name="User-email" required id="user-email" autocomplete="off">
+                <label class="form__label" for="user-email">e-mail*</label>
               </div>
               <div class="form__inputs">
-                <textarea class="form__input form__textarea" name="user-message" id="user-message" placeholder="Type your message here*"></textarea>
-                <label class="form__label" for="user-message"></label>
+                <input class="form__input" type="text" name="User-email" required id="user-email" autocomplete="off">
+                <label class="form__label" for="user-email">subject</label>
+              </div>
+              <div class="form__inputs">
+                <textarea class="form__input form__textarea" name="user-message" id="user-message"></textarea>
+                <label class="form__label" for="user-message">Type your message here*</label>
               </div>
               <button class="contact__btn">send message</button>
             </form>
           </div>
-          <div class="col-md-6  col-sm-12 col-xs-12 contact__text">
+          <div class="col-md-5  col-sm-12 col-xs-12 contact__text">
             <h2 class="contact__text-title">FEEL FREE TO CONTACT WITH ME!</h2>
             <p class="contact__text-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate dolores, quasi unde quisquam facilis at ullam aperiam similique dicta voluptatibus! </p>
             <a class="contact__text-link tell" href="tel:997262347">+998997262347</a>
@@ -282,6 +287,11 @@
         </div>
       </div>
     </section>
+    <footer>
+      <div class="container">
+        
+      </div>
+    </footer>
   </main>
 
   <script src="js/typed.js"></script> 
