@@ -371,11 +371,11 @@ p{
 
 .about {
   padding: 80px 0;
-  background: rgb(0, 0, 0);
+  background:#fff;
 }
 
 .about__title {
-  color: #fff;
+  color: #000;
   font-family:var(--texts-font);
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -383,28 +383,22 @@ p{
   text-align: center;
   margin-bottom: 60px;
 } 
-.about__title span{
-  color:rgb(241, 181, 14);
-  font-size: 40px;
-}
 .about__texts-title {
   margin-bottom: 10px;
-  color: #fff ;
+  color: #000 ;
   font-family:var(--texts-font);
   letter-spacing: 2px;
   text-transform: uppercase;
-  font-weight: 600;
+  font-weight: 500;
+  font-size: 18px;
+  font-weight: 400;
 }
 .about__texts-desc {
   max-width: 500px;
-  line-height: 1.5;
-  color: #fff;
-  font-family: var(--texts-font);
-  letter-spacing: 2px;
-  text-transform: uppercase;
+  line-height: 2em;
+  color: #555;
   line-height: 1.5em;
-  font-size: 13px;
-  font-weight: 500;
+  font-size: 14px;
 }
 
 
@@ -421,7 +415,7 @@ p{
   justify-content: space-between;
 }
 .experience__box span{
-  color: #fff;
+  color: #000;
 }
 .experience__desc {
   display: flex;
@@ -433,10 +427,10 @@ p{
   font-weight: 400;
   margin-bottom: 5px;
   letter-spacing: 1px;
-  color: #fff;
+  color: #000;
 }
 .experience__desc span{
-  color: rgb(241, 122, 122);
+  color:#888;
   margin-left: 5px;
 }
 .experience__line {
@@ -468,13 +462,12 @@ p{
 
 .my-offer {
   padding: 80px 0;
-  background: #000;
-
+  background: rgba(0, 0, 0, 0.08);
 }
 .my-offer__title {
   text-transform: uppercase;
   font-weight: bold;
-  color: #fff;
+  color: #000;
   font-family: var(--texts-font);
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -607,7 +600,7 @@ p{
   text-align: center;
   position: relative;
   transition: color 0.4s ease;
-  color: #fff;
+  color: #000;
 }
 .offer-box__title::before{
   content: "";
@@ -632,14 +625,10 @@ p{
   transition: width 0.4s ease;
 }
 .offer-box__desc {
-  line-height: 1.5;
-  color: #fff;
-  font-family: var(--texts-font);
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  line-height: 1.5em;
-  font-size: 12px;
-  font-weight: 400;
+  line-height: 2em;
+  color: #555;
+  line-height: 2;
+  font-size: 14px;
   text-align: center;
 }
 
@@ -710,10 +699,10 @@ p{
 
 .portfolio {
   padding: 80px 30px;
-  background: #000;
+  background: #fff;
 }
 .portfolio__title {
-  color: #fff;
+  color: #000;
   font-family: var(--texts-font);
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -723,17 +712,23 @@ p{
   margin-bottom: 50px;
   font-weight: 500;
 }
-.portfolio__menu-item--active::before{
+
+.portfolio__menu-item::before{
   content: "";
   position: absolute;
   left: 0;
   height: 1px;
-  background: #fff;
-  width: 100%;
+  background: #000;
+  width: 0;
   bottom: 0;
   transition: all 0.4s ease;
 }
-
+.portfolio__menu-item--active::before{
+  width: 100%;
+}
+.portfolio__menu-item:hover::before{
+  width: 100%;
+}
 .portfolio__menu-list {
   display: flex;
   justify-content: center ;
@@ -756,7 +751,7 @@ p{
   position: relative;
   text-transform: uppercase;
   cursor: pointer;
-  color: #fff;
+  color: #000;
 }
 
 .portfolio__img {
@@ -867,10 +862,10 @@ p{
 
 .blog {
   padding: 100px 0;
-  background: #000;
+  background:#ebebeb;
 }
 .blog__title {
-    color: #fff;
+    color: #000;
     font-family: var(--texts-font);
     letter-spacing: 2px;
     text-transform: uppercase;
@@ -884,7 +879,6 @@ p{
   width: 100%;
   height: 100%;
   background: rgb(241, 181, 14);
-  opacity: 0.8;
   position: relative;
   display: flex;
   justify-content: center;
@@ -960,12 +954,12 @@ p{
 
 .contact {
   padding: 100px 0;
-  background: #000;
+  background: #fff;
 }
 .contact__form {
   display: flex;
   flex-direction: column;
-  background: #fff;
+  background: #000;
   padding: 50px;
   position: relative;
 }
@@ -976,6 +970,7 @@ p{
   width: 100%;
   background: transparent;
   border: none;
+  color: #fff;
   padding: 10px 10px 5px 10px;
   font-size: 1em;
   border-bottom: 1px solid gray;
@@ -1000,8 +995,8 @@ p{
   padding: 15px 0;
   text-align: center;
   width: 145px;
-  background: #000;
-  border: 2px solid transparent;
+  background: transparent;
+  border: 2px solid #fff;
   color: #fff;
   margin-top: 30px;
   cursor: pointer;
@@ -1013,7 +1008,8 @@ p{
 }
 .contact__btn:hover{
   background: border-box;
-  border-color: #000;
+  border-color: #fff;
+  background: #fff;
   color: #000;
 }
 .contact__text-link {
@@ -1021,7 +1017,7 @@ p{
   align-items: center;
   font-size: 16px;
   letter-spacing: 1px;
-  color: #fff;
+  color: #000;
   font-weight: 500;
   font-family: var(--texts-font);
 }
@@ -1034,9 +1030,9 @@ p{
   width: 65px;
   height: 45px;
   font-size: 35px;
-  background: #fff;
+  background: #000;
   border: 2px solid transparent;
-  color: #000;
+  color: #fff;
   margin-right: 10px;
   transition: all 0.4s ease;
 }
@@ -1050,34 +1046,31 @@ p{
 
 .contact__text-link:hover::before{
   background: transparent;
-  border-color: #fff;
-  color: #fff;
+  border-color: #000;
+  color: #000;
 }
 .contact__text-link:not(:last-child) {
   margin-bottom: 50px;
 }
 .contact__text-title{
   max-width: 100%;
-  color: #fff;
+  color: #000;
   font-family: var(--texts-font);
   letter-spacing: 2px;
   text-transform: uppercase;
   line-height: 1.5em;
-  font-size: 30px;
+  font-size: 18px;
   margin-bottom: 30px;
-  font-weight: 500;
+  font-weight: 400;
 }
 .contact__text-desc{
-  max-width:100%;
-  line-height: 1.5;
-  color: #fff;
-  font-family: var(--texts-font);
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  line-height: 1.5em;
-  font-size: 13px;
-  font-weight: 500;
+  max-width:370px;
+  line-height: 2em;
+  color: #555;
+  line-height: 2;
+  font-size: 14px;
   margin-bottom: 30px;
+  transform: ;
 }
 
 @media screen and (max-width:992px){
