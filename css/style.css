@@ -1074,11 +1074,12 @@ p{
 }
 .contact__text-link::before{
   content: "";
+  padding: 23px;
   display: flex;
   align-items: center;
   justify-content: center;
   font-family: boxicons !important;
-  width: 65px;
+  max-width: 45px;
   height: 45px;
   font-size: 35px;
   background: #000;
@@ -1132,13 +1133,26 @@ p{
   .contact__text-link{
     font-size: 14px;
   }
-  .contact__text-link::before{
-    width: 55px;
-    height: 35px;
-    font-size: 25px;
-  }
   .form__label{
     font-size: 10px;
     letter-spacing: 1px;
+  }
+}
+@media screen and (max-width:345px){
+  .contact__text-link{
+    font-size: 12px;
+  }
+  .contact__text-link::before{
+    padding: 15px;
+    font-size: 25px;
+  }
+}
+@media screen and (max-width:300px){
+  .contact__text-link{
+    font-size: 10px;
+  }
+  .contact__text-link::before{
+    padding: 10px;
+    font-size: 20px;
   }
 }
