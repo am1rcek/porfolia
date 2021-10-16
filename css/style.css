@@ -1199,10 +1199,13 @@ p{
   flex-direction: column;
 }
 .icons-box__link {
+  display: block;
+  width: 35px;
   color: #000;
+  text-align: center;
   background: #fff;
   font-size: 18px;
-  padding: 5px;
+  padding: 5px 0;
   border-radius: 5px;
   border: 2px solid transparent;
   transition: all 0.4s ease;
@@ -1215,9 +1218,31 @@ p{
   border-color: #fff;
   color: #fff;
 }
-.bx {
+@media screen and (max-width:992px){
+  .footer__desc{
+    max-width: 80%;
+    text-align: center;
+  }
 }
-.bxl-instagram {
-}
-.bxl-telegram {
+@media screen and (max-width:768px){
+  .footer__row{
+    flex-direction: column;
+  }
+  .footer__icons{
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .icons-box__link{
+    margin-bottom: 0 !important;
+    margin-right: 20px;
+  }
+  .footer__desc{
+    margin-bottom: 25px;
+  }
+  .footer__link-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
