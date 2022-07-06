@@ -16,6 +16,13 @@ elMenuBtn.addEventListener("click",function(){
 })
 
 
+if(this.window.scrollY > 1429 && this.window.scrollY < 2933){
+  this.document.querySelector("body").classList.add("change-content")
+}
+else{
+  this.document.querySelector("body").classList.remove("change-content")
+}
+
 window.addEventListener("scroll",function(){
   header = document.querySelector("header");
   header.classList.toggle("header-bg",window.scrollY > 200);
