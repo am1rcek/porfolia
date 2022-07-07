@@ -4,7 +4,16 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Husan</title>
+  <title>Husan Dadajonov</title>
+  <meta name="keywords" content="frontend developer Husan Dadajonov">
+  <meta name="description" content="frontend developer Husan Dadajonov">
+  <meta name="geo.placename" content="Ташкент, Узбекистан">
+  <meta name="og:title" content="Husan Dadajonov web developer">
+  <meta name="og:description" content="Husan Dadajonov frontend developer">
+  <meta name="og:description" content="Diziproedu">
+  <meta name="og:site_name" content="Husan Dadajonov">
+  <meta name="og:locale" content="en_Eng">
+  <meta name="og:type" content="website">
   <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -88,6 +97,7 @@
               <li class="about__skill">ReactJs</li>
               <li class="about__skill">Git</li>
               <li class="about__skill">Redux</li>
+              <li class="about__skill">Next Js</li>
             </ul>
           </div>
         </div>
@@ -128,58 +138,37 @@
         </ul>
       </div>
     </section>
-    <section class="services" id="services">
-      <div class="container">
-        <ul class="services__list row between-xs">
-          <li class="services__item projects col-md-3 col-sm-6 col-xs-12">
-            <span class="projects__count">20</span>
-            <p class="projects__desc">Project completed</p>
-          </li>
-          <li class="services__item projects col-md-3 col-sm-6 col-xs-12">
-            <span class="projects__count">20</span>
-            <p class="projects__desc">Happy custommers</p>
-          </li>
-          <li class="services__item projects col-md-3 col-sm-6 col-xs-12">
-            <span class="projects__count">5</span>
-            <p class="projects__desc">Cups of coffee</p>
-          </li>
-          <li class="services__item projects col-md-3 col-sm-6 col-xs-12">
-            <span class="projects__count">0</span>
-            <p class="projects__desc">Award winnig</p>
-          </li>
-        </ul>
-      </div>
-    </section>
     <section class="portfolio" id="portfolio">
       <h2 class="portfolio__title">MY PORTFOLIO</h2>
       <div class="wrapper">
         <ul class="cards">
           <li>
-            <a href="https://stoic-dubinsky-1e6b62.netlify.app/" target="_blank">
+            <a href="https://www.sisterstravel.uz/" target="_blank">
               <figure class="card">
                 <span class="card__wrap"></span>
-                  <img src="img/instagram.png" />
-                  <figcaption>Instagram</figcaption>
+                  <img src="img/sisters-travel.png" />
+                  <figcaption>Sisters Travel</figcaption>
               </figure>
           </a>
           </li>
           <li>
-            <a href="https://lucid-jennings-9d1af2.netlify.app/" target="_blank">
+            <a href="https://www.xj-business.com/en" target="_blank">
               <figure class="card">
                 <span class="card__wrap"></span>
-                  <img src="img/tic-tac-toe.png" />
-                  <figcaption>Tic tac toe game</figcaption>
+                  <img src="./img/xj-busines.png" />
+      
+                  <figcaption>xj-business</figcaption>
       
               </figure>
             </a>
           </li>
           <li>
-            <a href="https://gifted-mirzakhani-9d70c3.netlify.app/" target="_blank">
+            <a href="https://www.tabiiybad.uz/" target="_blank">
               <figure class="card">
                 <span class="card__wrap"></span>
-                  <img src="./img/freshio.png" />
+                  <img src="./img/tabiyat-uz.png" />
       
-                  <figcaption>Freshio</figcaption>
+                  <figcaption>Drug-store</figcaption>
       
               </figure>
             </a>
@@ -220,7 +209,7 @@
                 <p>“When you change your thoughts, remember to also change your world.”</p>
                 <span>Norman Vincent Peale</span>
               </div>
-              <img src="img/me-img3.png" alt="me-img">
+              <img src="img/me-img5.JPG" alt="me-img">
             </div>
           </li>
           <li class="blog__item col-md-4 col-sm-6 col-xs-12 about-blog">
@@ -238,38 +227,33 @@
                 <p>“He who conquers himself is the mightiest warrior.”</p>
                 <span>Confucius</span>
               </div>
-              <img src="img/me-img4.png" alt="me-img">
+              <img src="img/me-imgg.jpg" alt="me-img">
             </div>
           </li>
         </ul>
       </div>
     </section>
     <section class="contact" id="contact">
+        
       <div class="container">
         <h2 class="contact__title">CONTACT ME</h2>
         <div class="contact__row row">
-          <div class="col-md-6 col-sm-12 col-xs-12 ">
+          <div class="col-md-12 col-sm-12 col-xs-12 " style="padding:0">
             <form class="contact__form form" action="https://echo.htmlacademy.ru/" method="post">
               <div class="form__inputs">
-                <input class="form__input" type="text" name="User-name" required id="user-name" autocomplete="off" placeholder="name*">
+                <input class="form__input user__name--inp" type="text" name="User-name" required id="user-name" autocomplete="off" placeholder="name*">
               </div>
               <div class="form__inputs">
-                <input class="form__input" type="email" name="User-email" required id="user-email" autocomplete="off" placeholder="e-mail*">
+                <input class="form__input user__email--inp" type="email" name="User-email" required id="user-email" autocomplete="off" placeholder="e-mail*">
               </div>
               <div class="form__inputs">
-                <input class="form__input" type="text" name="User-email" required id="user-email" autocomplete="off" placeholder="subject">
+                <input class="form__input user__phone--inp" type="number" name="User-email" required id="user-email" autocomplete="off" placeholder="Phone number">
               </div>
               <div class="form__inputs">
-                <textarea class="form__input form__textarea" name="user-message" id="user-message" placeholder="Type your message here*"></textarea>
+                <textarea class="form__input user__message--inp" name="user-message" id="user-message" placeholder="Type your message here*"></textarea>
               </div>
               <button class="contact__btn">send message</button>
             </form>
-          </div>
-          <div class="col-md-5  col-sm-12 col-xs-12 contact__text">
-            <h2 class="contact__text-title">FEEL FREE TO CONTACT WITH ME!</h2>
-            <p class="contact__text-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate dolores, quasi unde quisquam facilis at ullam aperiam similique dicta voluptatibus! </p>
-            <a class="contact__text-link tell" href="tel:997262347">+998 99 726 23 47</a>
-            <a class="contact__text-link email" href="mailto: xusandadjonov4385@gmail.com">xusandadjonov4385@gmail.com</a>
           </div>
         </div>
       </div>

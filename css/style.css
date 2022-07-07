@@ -14,8 +14,8 @@ html {
   --body-font:'Raleway', sans-serif;
   --texts-font:'Montserrat', sans-serif;
   --services-bg:#fff;
-  --porfoli-bg:#000;
-  --porfolio-text-color:#fff;
+  --porfoli-bg:#fff;
+  --porfolio-text-color:#000;
   --services-text-color:#000;
 }
 
@@ -949,6 +949,9 @@ p{
   height: 100%;
   object-fit: cover;
 }
+.about-blog{
+  height: 444px !important;
+}
 .about-blog__texts{
   width: 100%;
   position:absolute;
@@ -1018,12 +1021,12 @@ p{
 }
 .contact__form {
   width: 100%;
-  height: 485px;
   display: flex;
   flex-direction: column;
   background: #000;
-  padding: 50px;
+  padding: 30px;
   position: relative;
+  border-radius: 10px;
 }
 .contact__form div{
   position: relative;
@@ -1057,6 +1060,7 @@ p{
   color: rgba(255, 255, 255, 0.6);
   text-transform: uppercase;
   letter-spacing: 2px;
+  line-height: 20px;
 }
 .form__textarea{
   min-height: 150px;
@@ -1068,16 +1072,29 @@ p{
 .contact__btn{
   padding: 15px 0;
   text-align: center;
-  width: 145px;
+  width: 100%;
   background: transparent;
   border: 2px solid #fff;
   color: #fff;
   cursor: pointer;
   font-family: var(--texts-font);
-  font-size: 10px;
+  font-size: 20px;
   text-transform: uppercase;
   letter-spacing: 2px;
   transition: all 0.4s ease;
+  margin: 0 auto;
+  font-weight: bold;
+  border-radius: 10px;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
 }
 .contact__btn:hover{
   background-color: #fff;
@@ -1282,6 +1299,8 @@ p{
   .news .article {
     position: relative;
   }
+
+
   .fix {
     position: fixed;
   }
@@ -1385,7 +1404,6 @@ p{
   .cards .card:active,
   .news .card:active {
     box-shadow: 0 8px 16px 3px rgba(131, 131, 131, 0.6);
-    transform: translateY(-3px) scale(1.05) rotateX(15deg);
   }
   .cards .card:hover figcaption,
   .news .card:hover figcaption,
@@ -1464,4 +1482,5 @@ p{
   }
 
 
+    
   

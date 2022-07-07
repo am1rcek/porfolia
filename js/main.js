@@ -5,6 +5,11 @@ let elLineOne =document.querySelector(".line1");
 let elLineThree =document.querySelector(".line3");
 let elLine = document.querySelectorAll('.experience__line');
 let elNavItem = document.querySelectorAll(".nav__item");
+let elForm = document.querySelector(".contact__form");
+let elUserName = document.querySelector(".user__name--inp").value;
+let elPhoneNumber = document.querySelector(".user__phone--inp").value;
+let elEmail = document.querySelector(".user__email--inp").value;
+let elMessage = document.querySelector(".user__message--inp").value;
 
 
 
@@ -16,6 +21,14 @@ elMenuBtn.addEventListener("click",function(){
 })
 
 
+elForm.addEventListener("submit",function(e){
+  e.preventDefault()
+
+  // https://api.telegram.org/bot<token>/getUpdates
+  elForm.reset()
+})
+
+
 if(this.window.scrollY > 1429 && this.window.scrollY < 2933){
   this.document.querySelector("body").classList.add("change-content")
 }
@@ -24,15 +37,12 @@ else{
 }
 
 window.addEventListener("scroll",function(){
-  header = document.querySelector("header");
-  header.classList.toggle("header-bg",window.scrollY > 200);
-  if(this.window.scrollY > 1429 && this.window.scrollY < 2933){
-    this.document.querySelector("body").classList.add("change-content")
-  }
-  else{
-    this.document.querySelector("body").classList.remove("change-content")
-  }
+  const Elheader = document.querySelector("header");
+  Elheader.classList.toggle("header-bg",window.scrollY > 200);
 });
+const Elheader = document.querySelector("header");
+Elheader.classList.toggle("header-bg",window.scrollY > 200);
+
 elNavItem.forEach((navLink) => {
   window.addEventListener("scroll",function(){
     if(this.window.scrollY > 0){
