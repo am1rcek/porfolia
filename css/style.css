@@ -1031,6 +1031,9 @@ p{
 .contact__form div{
   position: relative;
 }
+.footer__link-box{
+  margin-bottom: 50px;
+}
 .form__input {
   width: 100%;
   background: transparent;
@@ -1108,12 +1111,11 @@ input[type=number] {
   color: #555;
   line-height: 2;
   font-size: 14px;
-  margin-bottom: 30px;
   font-family: var(--texts-font);
+  transition: all 0.4s ease;
 }
 .contact__text-link::before{
   content: "";
-  padding: 23px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1134,14 +1136,15 @@ input[type=number] {
 .email::before{
   content: "\edd2";
 }
+.telegram::before{
+  content: "\e972";
+}
 
-.contact__text-link:hover::before{
-  background: transparent;
-  border-color: #000;
-  color: #000;
+.contact__text-link:hover{
+  opacity: 0.7;
 }
 .contact__text-link:not(:last-child) {
-  margin-bottom: 50px;
+  margin-right: 50px;
 }
 .contact__text-title{
   max-width: 100%;
@@ -1204,23 +1207,11 @@ input[type=number] {
 }
 
 .footer__link::before{
-  height: 30px;
-  font-size: 18px;
-  padding:7px;
-  color: #000;
-  background: #fff;
-  border-radius: 5px;
+  font-size: 25px;
+  color: #fff;
 }
 .footer__link{
   color: rgb(187, 186, 186);
-}
-.footer__link:not(:last-child){
-  margin-bottom: 25px;
-}
-.footer__link:hover::before{
-  color: #fff;
-  background: #000;
-  border-color: #fff;
 }
 .footer__logos{
   display: flex;
@@ -1240,17 +1231,12 @@ input[type=number] {
 .icons-box__link {
   display: block;
   width: 35px;
-  color: #000;
+  color: #fff;
   text-align: center;
-  background: #fff;
   font-size: 18px;
-  padding: 5px 0;
   border-radius: 5px;
   border: 2px solid transparent;
   transition: all 0.4s ease;
-}
-.icons-box__link:not(:last-child){
-  margin-bottom: 25px;
 }
 .icons-box__link:hover{
   background: transparent;
@@ -1283,6 +1269,9 @@ input[type=number] {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+  .contact__text-link:not(:last-child){
+    margin-right: 0 !important;
   }
 }
 .abs,
