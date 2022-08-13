@@ -1471,5 +1471,12 @@ input[type=number] {
   }
 
 
+.visibilty-hidden{
+  position:absolute;
+  font-size: 30px;
+  visibility: hidden;
+  opacity: 0;
+}
+
     
   
