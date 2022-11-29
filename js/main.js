@@ -49,25 +49,21 @@ elNavItem.forEach((navLink) => {
       elNavItem.forEach(item => item.classList.remove("nav__link--active"))
       elNavItem[0].classList.add("nav__link--active");
     }
-    if(this.window.scrollY > 410){
+    if(this.window.scrollY > 480){
       elNavItem.forEach(item => item.classList.remove("nav__link--active"))
       elNavItem[1].classList.add("nav__link--active");
     }
-    if(this.window.scrollY > 826){
+    if(this.window.scrollY > 1301){
       elNavItem.forEach(item => item.classList.remove("nav__link--active"))
       elNavItem[2].classList.add("nav__link--active");
     }
-    if(this.window.scrollY > 1707){
+    if(this.window.scrollY > 2076){
       elNavItem.forEach(item => item.classList.remove("nav__link--active"))
       elNavItem[3].classList.add("nav__link--active");
     }
-    if(this.window.scrollY > 2786){
+    if(this.window.scrollY > 2667){
       elNavItem.forEach(item => item.classList.remove("nav__link--active"))
       elNavItem[4].classList.add("nav__link--active");
-    }
-    if(this.window.scrollY > 3542){
-      elNavItem.forEach(item => item.classList.remove("nav__link--active"))
-      elNavItem[5].classList.add("nav__link--active");
     }
   })
 })
